@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Validate Form</title>
+	<link rel="stylesheet" type="text/css" href=../css/style.css>
+
+	<style type="text/css">
+		/* using internal CSS */
+		h1{
+			margin-top: 100px;
+			text-align: center;
+			font-size: 70px;
+			color: brown;
+
+		}
+		form{
+			margin: 50px auto;
+			width: 300px;
+			color: white;
+		}
+		input{
+			padding: 10px;
+
+		}
+		input[type="text"]{
+			display: block;
+			margin-bottom: 1px;
+			width: 100%;
+			border: 3px solid orange ;
+			font-size:20px;
+		}
+		input[type="password"]{
+			display: block;
+			margin-bottom: 1px;
+			width: 100%;
+			border: 3px solid orange;
+			font-size:20px;
+
+		}
+		input[type="number"]{
+			display: block;
+			margin-bottom: 1px;
+			width: 100%;
+			border: 3px solid orange;
+			font-size:20px;
+		}
+		input[type="Email"]{
+			display: block;
+			margin-bottom: 1px;
+			width: 100%;
+			border: 3px solid orange;
+			font-size:20px;
+
+		}
+		input[type="radio"]{
+			margin:0 5px 5px 10px;
+			background:white;
+
+
+		}
+		
+		input[type="submit"]{
+			width: 200px;
+			height: 40px;
+			background: brown;
+			border: 3px solid white;
+			color: white;
+		}
+		
+	</style>
+	<script src=../javascript/script.js>/* link for javascript*/
+    </script>
+</head>
+<body bgcolor="black">
+	<div class="main">
+			<div class="logo">
+				<img src=../image/aa.png>
+			</div>
+			<ul>
+				<li><a href=../index.html>Home</a></li>
+				<li><a href="CV.html">CV</a></li>
+				<li><a href="blogs.html">Blogs</a></li>
+				<li><a href="research.html">research</a></li>
+				<li><a href="contact.html">Contact</a></li>
+
+			</ul>
+		</div><br>
+		<h1> Register Here !!</h1>
+		 <form   name="contact" onsubmit="validation()">
+			<input type="text" name="firstname" placeholder="Enter your First Name"> <br>
+			<input type="text" name="lastname" placeholder="Enter your last Name"><br>
+		    <input type="text" name="address" placeholder="Enter your Address"><br>
+			<input type="number" name="number" placeholder="Enter your Number"><br>        
+			<input type="email" name="email" placeholder="Enter your Email"><br>
+			<input type="password" name="password" placeholder="Enter your Password"><br>
+			<b><font size="4">Gender: <input type="radio" name="gender" value="male" checked> Male <input type="radio" name="gender" value="female"> Female<br><br></font></b>
+			<input type="Submit" value="Submit Form"><br><br></font>
+			<font size="5"><b>Message:</b><br></font>
+			<textarea name="message" rows="13" cols="38" placeholder="Write a message"></textarea><br></font>
+			<input type="submit">
+		 </form>
+		
+</body>
+</html>
